@@ -18,7 +18,7 @@ class BlogItem extends StatelessWidget {
             color: const Color.fromARGB(255, 74, 122, 206),
             width: double.infinity,
             child: AspectRatio(
-              aspectRatio: 2 / 4,
+              aspectRatio: 3 / 4,
               child: Image.network(blog.thumbnail!),
             ), //null da olabilir başka bir şeyde olabilir
           ),

@@ -54,14 +54,18 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.green,
-          title: const Text("Blog Listesi"),
+          backgroundColor: const Color.fromARGB(255, 45, 38, 57),
+          title: const Text(
+            "Blog Listesi",
+            style: TextStyle(color: Colors.white),
+          ),
           actions: [
             // refresh etmeden de verileri ana sayfayı getirdik.
             IconButton(
+              color: Colors.white38,
               onPressed: () async {
-                bool? result = await Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => AddBlog()));
+                bool? result = await Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const AddBlog()));
                 if (result == true) {
                   // demek ki ekleme işlemi gerçekleşmiş (geriye dönerken veri dönüyor.)
                   fetchBlogs();

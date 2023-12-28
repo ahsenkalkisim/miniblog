@@ -67,8 +67,11 @@ class _AddBlogState extends State<AddBlog> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.green,
-          title: const Text("Yeni Blog Ekle"),
+          backgroundColor: Color.fromARGB(255, 66, 59, 78),
+          title: const Text(
+            "Yeni Blog Ekle",
+            style: TextStyle(color: Colors.white),
+          ),
         ),
         // ************** Form Yönetimi **************
         // save / validaiton
@@ -89,7 +92,7 @@ class _AddBlogState extends State<AddBlog> {
                       const EdgeInsets.symmetric(vertical: 25, horizontal: 25),
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.green,
+                        backgroundColor: const Color.fromARGB(255, 51, 46, 59),
                         foregroundColor: Colors.black),
                     onPressed: () {
                       pickImage();
@@ -149,7 +152,8 @@ class _AddBlogState extends State<AddBlog> {
                       const EdgeInsets.symmetric(vertical: 25, horizontal: 25),
                   child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.green,
+                          backgroundColor:
+                              const Color.fromARGB(255, 46, 41, 54),
                           foregroundColor: Colors.black),
                       onPressed: () {
                         // form'u göndermek yada göndermemek.

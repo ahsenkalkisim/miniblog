@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mini_blog/screens/home_page.dart';
-import 'package:mini_blog/widgets/blog_item.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +14,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

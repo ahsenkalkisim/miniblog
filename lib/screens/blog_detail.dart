@@ -42,7 +42,7 @@ class _BlogDetailState extends State<BlogDetail> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: Colors.green,
+            backgroundColor: const Color.fromARGB(255, 53, 46, 67),
             title: Text(blog.title == null ? "Yükleniyor" : blog.title!)),
         body: blog.id == null
             ? const Center(child: CircularProgressIndicator())
@@ -50,6 +50,7 @@ class _BlogDetailState extends State<BlogDetail> {
                 padding: const EdgeInsets.all(16.0),
                 child: Center(
                   child: Container(
+                    height: 400,
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.grey[200],
@@ -58,14 +59,14 @@ class _BlogDetailState extends State<BlogDetail> {
                         topRight: Radius.circular(40),
                       ),
                       border: Border.all(
-                          color: const Color.fromARGB(255, 175, 239, 177),
-                          width: 3,
+                          color: const Color.fromARGB(255, 61, 55, 72),
+                          width: 4,
                           style: BorderStyle.solid),
                     ),
                     child: Column(
                       children: [
                         AspectRatio(
-                          aspectRatio: 4 / 2,
+                          aspectRatio: 3 / 2,
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Image.network(blog.thumbnail!),
