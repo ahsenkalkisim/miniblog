@@ -43,7 +43,10 @@ class _BlogDetailState extends State<BlogDetail> {
     return Scaffold(
         appBar: AppBar(
             backgroundColor: const Color.fromARGB(255, 53, 46, 67),
-            title: Text(blog.title == null ? "Yükleniyor" : blog.title!)),
+            title: Text(
+              blog.title == null ? "Yükleniyor" : blog.title!,
+              style: const TextStyle(color: Colors.white),
+            )),
         body: blog.id == null
             ? const Center(child: CircularProgressIndicator())
             : Padding(

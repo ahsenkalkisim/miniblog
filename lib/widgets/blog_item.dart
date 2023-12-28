@@ -17,14 +17,18 @@ class BlogItem extends StatelessWidget {
           Container(
             color: const Color.fromARGB(255, 74, 122, 206),
             width: double.infinity,
+            height: 200,
             child: AspectRatio(
-              aspectRatio: 3 / 4,
+              aspectRatio: 8 / 4,
               child: Image.network(blog.thumbnail!),
             ), //null da olabilir başka bir şeyde olabilir
           ),
           ListTile(
             title: Text(blog.title!),
-            subtitle: Text(blog.author!),
+            subtitle: Text(
+              blog.author!,
+              style: const TextStyle(color: Colors.white54),
+            ),
           ),
         ],
       ),
